@@ -1,0 +1,156 @@
+.music-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.music-list_button {
+  margin: 3px;
+  border-radius: 15px;
+  height: 50px;
+  width: 230px;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+  border: none;
+  position: relative;
+}
+
+.music-list_button:focus {
+  box-shadow: 0 14px 30px 5px rgba(0, 0, 0, 0.3);
+  animation: musicSelect 0.5s ease-in-out forwards;
+}
+
+.music-list img {
+  height: 40px;
+  width: 40px;
+  border-radius: 10px;
+}
+
+.music-list_button_info {
+  width: 150px;
+  text-align: start;
+  margin: 0 20px;
+}
+
+.music-list_button_info h3 {
+  opacity: 0.5;
+  font-weight: 700;
+  font-size: 12px;
+}
+
+.music-list_button_info span {
+  font-weight: 600;
+}
+
+.music-list_play {
+  height: 40px;
+  width: 40px;
+  background-color: rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  position: absolute;
+  top: 5px;
+  left: 20px;
+  border-radius: 10px;
+  z-index: 2;
+  visibility: hidden;
+}
+
+.music-list_play div {
+  margin: 10px 1px;
+  background-color: white;
+  width: 5px;
+  height: 20px;
+}
+
+.music-list_list:focus-within .music-list_play {
+  visibility: visible;
+}
+
+.music-list_list:focus-within .music-list_play div:first-child {
+  animation: musicPlay 1s linear infinite;
+}
+
+.music-list_list:focus-within .music-list_play div:nth-child(2) {
+  animation: musicPlay 1s linear infinite;
+  animation-delay: 0.4s;
+}
+
+.music-list_list:focus-within .music-list_play div:last-child {
+  animation: musicPlay 1s linear infinite;
+  animation-delay: 0.2s;
+}
+
+.music-list_list:focus-within .on_controller {
+  visibility: visible;
+}
+
+.music-list_list {
+  position: relative;
+}
+
+.on_controller {
+  width: 120px;
+  text-align: start;
+  margin: 0 20px;
+  background-color: #222222;
+  position: absolute;
+  top: 245px;
+  left: 0px;
+  visibility: hidden;
+}
+
+.on_controller h3 {
+  color: white;
+  opacity: 0.5;
+  font-weight: 700;
+  font-size: 12px;
+}
+
+.on_controller span {
+  font-weight: 600;
+  color: white;
+  overflow: scroll;
+}
+
+.on_controller_2 {
+  top: 189px;
+}
+
+.on_controller_3 {
+  top: 133px;
+}
+
+.on_controller_4 {
+  top: 77px;
+}
+
+.controller {
+  background-color: #222222;
+  display: flex;
+  align-items: center;
+  width: 265px;
+  height: 50px;
+  border-radius: 30px;
+  margin-top: 10px;
+  color: white;
+  font-weight: 500;
+  padding: 20px;
+}
+
+.controller h4 {
+  text-align: center;
+  width: 70%;
+}
+
+.controller-play {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 5px;
+  width: 40%;
+}

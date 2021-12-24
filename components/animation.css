@@ -1,0 +1,98 @@
+@keyframes musicSelect {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.1);
+  }
+}
+
+@keyframes musicPlay {
+  0% {
+    transform: scaleY(1);
+  }
+  50% {
+    transform: scaleY(0.3);
+  }
+  100% {
+    transform: scaleY(1);
+  }
+}
+
+@keyframes boom {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.5);
+    box-shadow: 0 14px 50px rgb(70, 107, 230);
+  }
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(0%);
+  }
+  50% {
+    transform: translateY(-15%);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+@keyframes heart {
+  from {
+    background-color: white;
+    color: none;
+  }
+  to {
+    background-color: tomato;
+    color: white;
+  }
+}
+
+@keyframes playBtn2 {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.2);
+    box-shadow: 0px 30px 30px rgba(0, 0, 0, 0.8);
+    background-color: black;
+    color: white;
+  }
+}
+
+@keyframes playBtn {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.2);
+    background-color: black;
+    color: white;
+  }
+}
+
+@keyframes playBar {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.2);
+  }
+}
+
+@keyframes boom2 {
+  from {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+    box-shadow: 0 14px 50px rgb(209, 184, 41);
+  }
+  to {
+    transform: scale(1);
+  }
+}
